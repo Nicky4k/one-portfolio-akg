@@ -88,7 +88,7 @@ const Experience = (props: Props) => {
       achievements: [
         "Developed highly performant and responsive UI. Descreased loading time by 26%.",
         "Worked with RESTful APIs.",
-        "JavaScript Unit tests using Jest and RTL.",
+        "JavaScript Unit tests using Jest and React Testing Library.",
         "Experience and basic knowledge with Node JS and Express JS. ",
         "Built Eye catching and animated front end UI with Tailwind CSS and Framer Motion.",
         "Optimized performance and reduced build bundle size by 10%.",
