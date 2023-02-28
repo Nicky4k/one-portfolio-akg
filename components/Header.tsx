@@ -7,7 +7,7 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center h-18">
       <motion.div
         initial={{
           x: -500,
@@ -25,19 +25,31 @@ function Header({}: Props) {
         className="fle flex-row items-center"
       >
         <SocialIcon
-          style={{ margin: "0.15rem 0.25rem", height: "4rem", width: "4rem" }}
+          style={{
+            margin: "0.15rem 0.25rem",
+            height: "3.25rem",
+            width: "3.25rem",
+          }}
           url="https://github.com/Nicky4k"
           fgColor="grey"
           bgColor="transparent"
         />
         <SocialIcon
-          style={{ margin: "0.15rem 0.25rem", height: "4rem", width: "4rem" }}
+          style={{
+            margin: "0.15rem 0.25rem",
+            height: "3.25rem",
+            width: "3.25rem",
+          }}
           url="https://linkedin.com/in/ashwini-gupta-29855296/"
           fgColor="grey"
           bgColor="transparent"
         />
         <SocialIcon
-          style={{ margin: "0.15rem 0.25rem", height: "4rem", width: "4rem" }}
+          style={{
+            margin: "0.15rem 0.25rem",
+            height: "3.25rem",
+            width: "3.25rem",
+          }}
           className="cursor-pointer"
           network="email"
           fgColor="grey"
@@ -60,7 +72,7 @@ function Header({}: Props) {
         }}
         className="p-4 flex flex-row items-center cursor-pointer"
       >
-        <FaFileDownload style={{ color: "grey", fontSize: "2.25rem" }} />
+        <FaFileDownload style={{ color: "grey", fontSize: "1.75rem" }} />
         <p className="p-1 text-sm text-gray-400">Download CV</p>
       </motion.div>
     </header>
