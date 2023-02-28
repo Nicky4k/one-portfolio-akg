@@ -4,18 +4,20 @@ import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import displayPicture from "../assets/my-pic-dp-square.JPG";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, I am Ashwini Gupta",
+      "Hi, 👋🏻",
+      "I am Ashwini Gupta",
       "Eat Sleep React Repeat",
       "<🖤BlackCoffee.jsx />",
     ],
     loop: true,
-    delaySpeed: 2000,
+    delaySpeed: 2250,
   });
 
   return (
@@ -30,10 +32,22 @@ const Hero = (props: Props) => {
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
           Front end Developer
         </h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <motion.h1
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.05,
+            delay: 2,
+          }}
+          className="text-5xl lg:text-6xl font-semibold px-10"
+        >
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
-        </h1>
+        </motion.h1>
         <div className="pt-5">
           <Link href="#about">
             <button className="heroButton">About</button>

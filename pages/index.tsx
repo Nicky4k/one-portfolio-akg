@@ -5,6 +5,9 @@ import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +21,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
       <section id="about" className="snap-center">
         <About />
       </section>
-      {/* experiences */}
-      {/* skills */}
+      <section id="experience" className="snap-center">
+        <Experience />
+      </section>
+      <section id="skills" className="snap-start">
+        <Skills />
+      </section>
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
+
       {/* projects */}
       {/* download resume */}
       {/* contact me */}
