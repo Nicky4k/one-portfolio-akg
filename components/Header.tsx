@@ -7,7 +7,7 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="sticky top-0 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center h-18">
+    <header className="sticky top-0 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center h-18 pl-2 pr-2">
       <motion.div
         initial={{
           x: -500,
@@ -72,8 +72,11 @@ function Header({}: Props) {
         }}
         className="p-4 flex flex-row items-center cursor-pointer"
       >
-        <FaFileDownload style={{ color: "grey", fontSize: "1.75rem" }} />
-        <p className="p-1 text-sm text-gray-400">Download CV</p>
+        <div className="h-8 w-30 pr-2 flex flex-col justify-evenly align-top">
+          <p className="text-sm text-gray-400">Download</p>
+          <p className="text-sm text-right text-gray-400 ">CV</p>
+        </div>
+        <FaFileDownload style={{ color: "grey", fontSize: "2rem" }} />
       </motion.div>
     </header>
   );

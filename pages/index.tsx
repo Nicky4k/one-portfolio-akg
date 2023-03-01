@@ -8,12 +8,13 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Contactme from "@/components/Contactme";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 ">
       <Head>
         <title>One Portfolio - AKG</title>
         <meta name="description" content="One Portfolio, Ashwini Gupta" />
@@ -36,10 +37,10 @@ export default function Home() {
       <section id="projects" className="snap-start">
         <Projects />
       </section>
-
-      {/* projects */}
+      <section id="contactme" className="snap-start">
+        <Contactme />
+      </section>
       {/* download resume */}
-      {/* contact me */}
       {/* maps integration */}
     </div>
   );

@@ -14,7 +14,7 @@ const SkillAvatar = ({ directionLeft }: Props) => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
       className="object-contain w-24 h-24 xl:w-32 xl:h-32 "
-      src="https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png"
+      src="https://framerusercontent.com/images/kTAwfpXO8cVz7oqiIKgb7XLjM.png"
     />
   );
 };
