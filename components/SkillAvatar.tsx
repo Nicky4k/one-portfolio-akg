@@ -13,7 +13,7 @@ const SkillAvatar = ({ directionLeft }: Props) => {
       }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
-      className="object-contain w-24 h-24 xl:w-32 xl:h-32 "
+      className="object-contain w-20 h-20 xl:w-32 xl:h-32 "
       src="https://framerusercontent.com/images/kTAwfpXO8cVz7oqiIKgb7XLjM.png"
     />
   );

@@ -25,8 +25,7 @@ const Skills = (props: Props) => {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
-        <SkillAvatar />
+      <div className="w-full grid place-items-center grid-cols-4 gap-4 xl:grid-cols-4 xl:p-60 ">
         <SkillAvatar />
         <SkillAvatar />
         <SkillAvatar />

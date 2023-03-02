@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contactme from "@/components/Contactme";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +42,11 @@ export default function Home() {
         <Contactme />
       </section>
       {/* download resume */}
-      {/* maps integration */}
+      <section id="footer" className="snap-start">
+        <Footer />
+        {/* maps integration */}
+        {/* hobbies with logo png */}
+      </section>
     </div>
   );
 }

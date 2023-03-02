@@ -30,6 +30,7 @@ function Header({}: Props) {
             height: "3.25rem",
             width: "3.25rem",
           }}
+          target="_blank"
           url="https://github.com/Nicky4k"
           fgColor="grey"
           bgColor="transparent"
@@ -40,6 +41,7 @@ function Header({}: Props) {
             height: "3.25rem",
             width: "3.25rem",
           }}
+          target="_blank"
           url="https://linkedin.com/in/ashwini-gupta-29855296/"
           fgColor="grey"
           bgColor="transparent"
@@ -50,6 +52,7 @@ function Header({}: Props) {
             height: "3.25rem",
             width: "3.25rem",
           }}
+          target="_blank"
           className="cursor-pointer"
           network="email"
           fgColor="grey"

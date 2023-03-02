@@ -11,7 +11,7 @@ type Props = {};
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi!",
+      "< Hi! />",
       "I am Ashwini Gupta",
       "Eat Sleep React Repeat",
       "<Black_Coffee.jsx />",
@@ -29,7 +29,7 @@ const Hero = (props: Props) => {
         alt="display picture"
       />
       <div className="z-10">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
+        <h2 className="text-sm uppercase text-gray-400 pb-2 tracking-[10px]">
           Front end Developer
         </h2>
         <motion.h1
@@ -43,7 +43,7 @@ const Hero = (props: Props) => {
             duration: 0.05,
             delay: 2,
           }}
-          className="text-5xl lg:text-6xl font-semibold px-10"
+          className="text-2xl lg:text-6xl font-semibold px-10"
         >
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
