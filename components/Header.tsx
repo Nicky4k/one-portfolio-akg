@@ -3,6 +3,8 @@ import { SocialIcon } from "react-social-icons";
 import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import useDownloader from "react-use-downloader";
+import Link from "next/link";
+import { PhoneIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -36,6 +38,22 @@ function Header({}: Props) {
             height: "3.25rem",
             width: "3.25rem",
           }}
+          url="mailto:ashwinigupta0126@gmail.com"
+          target="_blank"
+          className="cursor-pointer"
+          network="email"
+          fgColor="grey"
+          bgColor="transparent"
+        />
+        <a href="tel:+919148669104">
+          <PhoneIcon className="text-gray-200/40 h-8 w-12 px-3 inline-block" />
+        </a>
+        <SocialIcon
+          style={{
+            margin: "0.15rem 0.25rem",
+            height: "3.25rem",
+            width: "3.25rem",
+          }}
           target="_blank"
           url="https://github.com/Nicky4k"
           fgColor="grey"
@@ -49,18 +67,6 @@ function Header({}: Props) {
           }}
           target="_blank"
           url="https://linkedin.com/in/ashwini-gupta-29855296/"
-          fgColor="grey"
-          bgColor="transparent"
-        />
-        <SocialIcon
-          style={{
-            margin: "0.15rem 0.25rem",
-            height: "3.25rem",
-            width: "3.25rem",
-          }}
-          target="_blank"
-          className="cursor-pointer"
-          network="email"
           fgColor="grey"
           bgColor="transparent"
         />

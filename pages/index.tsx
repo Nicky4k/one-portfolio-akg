@@ -41,11 +41,8 @@ export default function Home() {
       <section id="contactme" className="snap-start">
         <Contactme />
       </section>
-      {/* download resume */}
       <section id="footer" className="snap-start">
         <Footer />
-        {/* maps integration */}
-        {/* hobbies with logo png */}
       </section>
     </div>
   );

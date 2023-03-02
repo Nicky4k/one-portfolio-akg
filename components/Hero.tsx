@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-10 pt-20 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
         loading="lazy"
@@ -44,7 +44,7 @@ const Hero = (props: Props) => {
             duration: 0.05,
             delay: 2,
           }}
-          className="text-2xl lg:text-6xl font-semibold px-10"
+          className="text-2xl md:text-5xl lg:text-6xl font-semibold px-10"
         >
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />

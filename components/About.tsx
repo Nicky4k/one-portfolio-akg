@@ -23,7 +23,7 @@ const About = (props: Props) => {
           x: 0,
           opacity: 1,
         }}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 xl:w-56 xl:h-56 mt-5 rounded-full object-cover"
         src="https://avatars.githubusercontent.com/u/87268446?v=4"
       />
       <motion.div
@@ -41,19 +41,22 @@ const About = (props: Props) => {
           scale: 1,
         }}
       >
-        <h4 className="text-4xl font-semibold xl:px-5">
-          Here is a{" "}
-          <span className="underline decoration-[#F7AB0A]/40">little</span>{" "}
-          background
+        <h4 className="text-2xl font-semibold md:px-5 xl:px-5 pb-4 xl:text-4xl md:text-3xl">
+          I welcome you to read a{" "}
+          <span className="underline decoration-[#F7AB0A]/40 text-gray-500">
+            little
+          </span>{" "}
+          bio
         </h4>
-        <p className="text-base xl:py-1 xl:px-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi
-          magni, doloribus suscipit corrupti aspernatur! Reprehenderit, minima
-          expedita temporibus nam nulla eligendi. Ratione quasi adipisci omnis
-          magnam repellendus ut ipsam. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Aspernatur perferendis obcaecati earum provident
-          quam sed officia veniam tempore quidem pariatur repellendus architecto
-          iste explicabo beatae similique, dolorem, ut esse exercitationem.
+        <p className="text-sm xl:text-base md:text-base xl:py-1 md:px-5 xl:px-5 text-gray-400">
+          I have been coding since 4th grade and have 5 years of experience in
+          IT, and 2 years of experience with React, JavaScript, and Redux. I
+          build dynamic, responsive, and progressive UI for real world business
+          problems.
+          <br />I am excited to learn about the opportunities and challenges
+          about the role you are interviewing. I'm confident that my skills and
+          experience match the requirements of the role. I would appretiate if
+          we could expedite the interviewing process.
         </p>
       </motion.div>
     </div>

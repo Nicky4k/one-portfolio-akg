@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 
 const ExperienceCards = (props: Props) => {
   return (
-    <article className="flex flex-col rounded-lg item-center space-y-7 flex-shrink-0 w-[500px] md:w=[600px] xl:w-[900px] snap-center bg-[#292929] p-10  cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article
+      className="flex flex-col rounded-lg item-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[1000px] snap-center bg-[#292929] px-10 py-7 mt-10  cursor-pointer overflow-hidden 
+    "
+    >
       <motion.img
-        loading="lazy"
         initial={{
           y: -100,
           opacity: 0,
@@ -20,42 +22,42 @@ const ExperienceCards = (props: Props) => {
           y: 0,
         }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover
-object-center"
-        src="https://avatars.githubusercontent.com/u/87268446?v=4"
-        alt="diaplay picture"
+        className="w-24 h-24 object-contain
+         bg-white p-2 rounded-full"
+        src={props.props.companyImg}
+        alt={props.props.company}
       />
-      <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">Java Developer</h4>
-        <p className="font-bold text-2xl mt-1">IBM</p>
-        <div className="flex space-x-2 my-2">
-          <img
-            loading="lazy"
-            className="h-10 w-10 object-contain"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-            alt="react"
-          />
-          <img
-            loading="lazy"
-            className="h-10 w-10 object-contain"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-            alt="react"
-          />
-          <img
-            loading="lazy"
-            className="h-10 w-10 object-contain"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-            alt="react"
-          />
+      <div className="">
+        <h4 className="text-2xl font-light text-gray-200">
+          {props.props.jobTitle}
+        </h4>
+        <p className="font-bold text-2xl mt-1 text-gray-500">
+          {props.props.company}
+        </p>
+        <div className="flex space-x-2 my-1 flex flex-wrap">
+          {props.props.tools.map((tool, i) => (
+            <img
+              key={i}
+              loading="lazy"
+              className="h-10 w-10 object-contain m-1"
+              src={tool}
+              alt="skill"
+            />
+          ))}
         </div>
-        <p className="uppercase py-5 text-gray-300">Start: End:</p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary Points</li>
-          <li>Security</li>
-          <li>Optimize Performance</li>
-          <li>Agile</li>
-          <li>Communication Skills</li>
+        <p className="py-2 text-gray-300">
+          {props.props.startDate} - {props.props.endDate}
+        </p>
+        <ul className="list-disc space-y-2 ml-5 text-lg">
+          {props.props.achievements.map((point, i) => (
+            <li key={i} className="text-gray-500">
+              {point}
+            </li>
+          ))}
         </ul>
+        <div className="pt-4">
+          <p className="text-blue-700">{props.props.no}</p>
+        </div>
       </div>
     </article>
   );
