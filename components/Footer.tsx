@@ -6,7 +6,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="flex flex-col relative text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center h-screen">
+    <footer className="flex flex-col relative text-center md:text-left md:flex-row max-w-7xl xl:md:px-10 px-5 justify-evenly mx-auto items-center h-screen">
       <div className="w-full h-full relative top-5 flex flex-col justify-center items-center">
         <h5 className="uppercase tracking-[20px] text-gray-500 text-xl pb-10">
           Hobbies

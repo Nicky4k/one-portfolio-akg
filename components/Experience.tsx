@@ -4,36 +4,35 @@ import ExperienceCards from "./ExperienceCards";
 
 type Props = {};
 
-const Experience = (props: Props) => {
-  const png = {
-    java: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
-    react:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
-    redux: "https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png",
-    reduxSaga:
-      "https://cdn.freebiesupply.com/logos/large/2x/redux-saga-logo-png-transparent.png",
-    html: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
-    css: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png",
-    node: "https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon.png",
-    express:
-      "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
-    nextjs:
-      "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
-    jest: "https://assets.stickpng.com/images/62a765b6bd73a4af5c5d4fbb.png",
-    testingRTL: "https://testing-library.com/img/octopus-128x128.png",
-    sql: "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png",
-    msOffice:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/2048px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png",
-    mui: "https://mui.com/static/logo.png",
-    cognos:
-      "https://www.element61.be/sites/default/files/img_competences/IBM%2520Cognos.png",
-    watson: "https://logodix.com/logo/44000.png",
-  };
+export const png = {
+  java: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+  react:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+  redux: "https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png",
+  reduxSaga: "https://miro.medium.com/max/312/1*zcK3vvoVjsqkqB0oja8RWw.png",
+  html: "https://cdn-icons-png.flaticon.com/512/732/732212.png",
+  css: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/240px-CSS3_logo.svg.png",
+  node: "https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon.png",
+  express:
+    "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+  nextjs:
+    "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
+  jest: "https://assets.stickpng.com/images/62a765b6bd73a4af5c5d4fbb.png",
+  testingRTL: "https://testing-library.com/img/octopus-128x128.png",
+  sql: "https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png",
+  msOffice:
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/2048px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png",
+  mui: "https://mui.com/static/logo.png",
+  cognos:
+    "https://www.element61.be/sites/default/files/img_competences/IBM%2520Cognos.png",
+  watson: "https://logodix.com/logo/44000.png",
+};
 
+const Experience = (props: Props) => {
   const companies = {
     ibm: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png",
     freelance:
-      "https://www.pngfind.com/pngs/m/170-1706361_web-development-icon-web-development-logo-png-transparent.png",
+      "https://e7.pngegg.com/pngimages/980/714/png-clipart-computer-icons-code-symbol-coding-miscellaneous-angle.png",
     udhd: "https://zeevector.com/wp-content/uploads/LOGO/Government-of-India-Logo-Vector-PNG.png",
   };
 
@@ -54,7 +53,13 @@ const Experience = (props: Props) => {
       ],
       startDate: "March 2021",
       endDate: "Present",
-      achievements: ["testing", "agile", "research & analytics"],
+      achievements: [
+        "Built single page progressive web apps and dashboards.",
+        "Optimised front-end performance.",
+        "Unit and Integration Testing using Jest and React Testing Library.",
+        "Worked with latest tech stack: React JS, Redux-Saga, RESTful APIs, Express JS, and ES6.",
+        "Sound knowledge of version control system - GIT and GitHub",
+      ],
       no: "1 of 3",
     },
     {
@@ -74,7 +79,13 @@ const Experience = (props: Props) => {
       ],
       startDate: "August 2019",
       endDate: "Feb 2021",
-      achievements: ["testing", "agile", "research & analytics"],
+      achievements: [
+        "Developed highly performant and responsive UI.",
+        "Worked with RESTful APIs. ",
+        "JavaScript Unit tests using Jest and RTL.",
+        "Experience and basic knowledge with Node JS and Express JS. ",
+        "Built Eye catching and animated front end UI with Tailwind CSS and Framer Motion.",
+      ],
       no: "2 of 3",
     },
     {
@@ -84,7 +95,12 @@ const Experience = (props: Props) => {
       tools: [png.java, png.sql, png.cognos, png.watson, png.msOffice],
       startDate: "July 2015",
       endDate: "March 2017",
-      achievements: ["testing", "agile", "research & analytics"],
+      achievements: [
+        "Built interactive dashboards for international clients.",
+        "Collaborated with large team of developers and developed features in agile.",
+        "Experience working with MySQL.",
+        "Resarch & Analytics",
+      ],
       no: "3 of 3",
     },
   ];

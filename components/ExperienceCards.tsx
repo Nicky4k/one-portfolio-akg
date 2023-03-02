@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ExperienceCards = (props: Props) => {
   return (
     <article
-      className="flex flex-col rounded-lg item-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[1000px] snap-center bg-[#292929] px-10 py-7 mt-10  cursor-pointer overflow-hidden 
+      className="flex flex-col rounded-lg item-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[1000px] snap-center bg-[#292929] xl:px-10 md:px-10 px-5 py-7 mt-10  cursor-pointer overflow-scroll 
     "
     >
       <motion.img
@@ -39,7 +39,7 @@ const ExperienceCards = (props: Props) => {
             <img
               key={i}
               loading="lazy"
-              className="h-10 w-10 object-contain m-1"
+              className="xl:md:h-10 h-7 w-10 object-contain m-1"
               src={tool}
               alt="skill"
             />
@@ -48,14 +48,14 @@ const ExperienceCards = (props: Props) => {
         <p className="py-2 text-gray-300">
           {props.props.startDate} - {props.props.endDate}
         </p>
-        <ul className="list-disc space-y-2 ml-5 text-lg">
+        <ul className="list-disc space-y-2 ml-5 xl:text-lg md:text-lg text-sm">
           {props.props.achievements.map((point, i) => (
             <li key={i} className="text-gray-500">
               {point}
             </li>
           ))}
         </ul>
-        <div className="pt-4">
+        <div className="pt-4 ">
           <p className="text-blue-700">{props.props.no}</p>
         </div>
       </div>
