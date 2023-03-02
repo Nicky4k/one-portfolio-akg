@@ -11,7 +11,7 @@ const Projects = (props: Props) => {
         opacity: 0,
       }}
       transition={{
-        duration: 1.2, 
+        duration: 1.2,
       }}
       whileInView={{
         opacity: 1,
@@ -29,6 +29,7 @@ const Projects = (props: Props) => {
             className="w-screen flex-shrink-0 snap-center flex  flex-col items-center justify-center p-20 md:p-44 h-screen"
           >
             <motion.img
+              loading="lazy"
               initial={{
                 y: -100,
                 opacity: 0,

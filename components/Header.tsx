@@ -2,10 +2,16 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
+import useDownloader from "react-use-downloader";
 
 type Props = {};
 
 function Header({}: Props) {
+  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+    useDownloader();
+
+  const fileUrl = "../files/Ashwini_Gupta_CV.pdf";
+  const filename = "Ashwini_Gupta_CV.pdf";
   return (
     <header className="sticky top-0 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center h-18 pl-2 pr-2">
       <motion.div
@@ -59,7 +65,8 @@ function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
-      <motion.div
+      <motion.a
+        onClick={() => download(fileUrl, filename)}
         initial={{
           x: 500,
           opacity: 0,
@@ -73,6 +80,10 @@ function Header({}: Props) {
         transition={{
           duration: 1,
         }}
+        download={true}
+        href="https://drive.google.com/u/0/uc?id=1XVfYj4bjWhH7p7CHNyxToJMZ3negQ3i5&export=download"
+        target="_blank"
+        rel="noopener noreferrer"
         className="p-4 flex flex-row items-center cursor-pointer"
       >
         <div className="h-8 w-30 pr-2 flex flex-col justify-evenly align-top">
@@ -80,7 +91,7 @@ function Header({}: Props) {
           <p className="text-sm text-right text-gray-400 ">CV</p>
         </div>
         <FaFileDownload style={{ color: "grey", fontSize: "2rem" }} />
-      </motion.div>
+      </motion.a>
     </header>
   );
 }

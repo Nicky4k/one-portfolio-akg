@@ -8,6 +8,7 @@ type Props = {
 const SkillAvatar = ({ directionLeft }: Props) => {
   return (
     <motion.img
+      loading="lazy"
       initial={{
         x: directionLeft ? -200 : 200,
       }}

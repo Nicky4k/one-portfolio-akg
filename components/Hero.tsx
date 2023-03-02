@@ -24,6 +24,7 @@ const Hero = (props: Props) => {
     <div className="h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
+        loading="lazy"
         className="relative mx-auto rounded-full h-32 w-32 object-cover"
         src={displayPicture}
         alt="display picture"

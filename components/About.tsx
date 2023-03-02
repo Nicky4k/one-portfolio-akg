@@ -11,6 +11,7 @@ const About = (props: Props) => {
       </h3>
 
       <motion.img
+        loading="lazy"
         initial={{
           x: -200,
           opacity: 0,
@@ -40,12 +41,12 @@ const About = (props: Props) => {
           scale: 1,
         }}
       >
-        <h4 className="text-4xl font-semibold">
+        <h4 className="text-4xl font-semibold xl:px-5">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/40">little</span>{" "}
           background
         </h4>
-        <p className="text-base">
+        <p className="text-base xl:py-1 xl:px-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi
           magni, doloribus suscipit corrupti aspernatur! Reprehenderit, minima
           expedita temporibus nam nulla eligendi. Ratione quasi adipisci omnis

@@ -7,6 +7,7 @@ const ExperienceCards = (props: Props) => {
   return (
     <article className="flex flex-col rounded-lg item-center space-y-7 flex-shrink-0 w-[500px] md:w=[600px] xl:w-[900px] snap-center bg-[#292929] p-10  cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
+        loading="lazy"
         initial={{
           y: -100,
           opacity: 0,
@@ -29,16 +30,19 @@ object-center"
         <p className="font-bold text-2xl mt-1">IBM</p>
         <div className="flex space-x-2 my-2">
           <img
+            loading="lazy"
             className="h-10 w-10 object-contain"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
             alt="react"
           />
           <img
+            loading="lazy"
             className="h-10 w-10 object-contain"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
             alt="react"
           />
           <img
+            loading="lazy"
             className="h-10 w-10 object-contain"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
             alt="react"
