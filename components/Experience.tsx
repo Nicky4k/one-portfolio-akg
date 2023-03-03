@@ -55,6 +55,7 @@ const Experience = (props: Props) => {
       endDate: "Present",
       achievements: [
         "Built single page progressive web apps and dashboards.",
+        "Building reusable functional components.",
         "Optimised front-end performance.",
         "Unit and Integration Testing using Jest and React Testing Library.",
         "Worked with latest tech stack: React JS, Redux-Saga, RESTful APIs, Express JS, and ES6.",
@@ -126,6 +127,9 @@ const Experience = (props: Props) => {
           <ExperienceCards key={i} props={exp} />
         ))}
       </div>
+      <p className="absolute bottom-5 text-zinc-500 bg-zinc-800 px-5 rounded-xl py-0.5">
+        swipe horizontally for more
+      </p>
     </motion.div>
   );
 };

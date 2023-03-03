@@ -48,7 +48,7 @@ const ExperienceCards = (props: Props) => {
         <p className="py-2 text-gray-300">
           {props.props.startDate} - {props.props.endDate}
         </p>
-        <ul className="list-disc space-y-2 ml-5 xl:text-lg md:text-lg text-sm">
+        <ul className="list-disc space-y-2 ml-5 xl:text-sm md:text-sm text-xs">
           {props.props.achievements.map((point, i) => (
             <li key={i} className="text-gray-500">
               {point}
