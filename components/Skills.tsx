@@ -27,7 +27,7 @@ const Skills = (props: Props) => {
       </h3>
 
       <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-4 xl:p-60 ">
-        {Object.values(png).map((skill, i) => (
+        {Object.entries(png).map((skill, i) => (
           <SkillAvatar key={i} props={skill} />
         ))}
       </div>
