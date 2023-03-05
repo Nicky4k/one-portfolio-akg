@@ -34,20 +34,20 @@ const ExperienceCards = (props: Props) => {
         <p className="font-bold text-2xl mt-1 text-gray-500">
           {props.props.company}
         </p>
+        <p className="py-2 text-gray-300">
+          {props.props.startDate} - {props.props.endDate}
+        </p>
         <div className="flex space-x-2 my-1 flex flex-wrap">
           {props.props.tools.map((tool, i) => (
             <img
               key={i}
               loading="lazy"
               className="xl:md:h-10 h-7 w-10 object-contain m-1"
-              src={tool}
-              alt="skill"
+              src={tool.imgLocation}
+              alt={tool.toolName}
             />
           ))}
         </div>
-        <p className="py-2 text-gray-300">
-          {props.props.startDate} - {props.props.endDate}
-        </p>
         <ul className="list-disc space-y-2 ml-5 xl:text-sm md:text-sm text-xs">
           {props.props.achievements.map((point, i) => (
             <li key={i} className="text-gray-500">

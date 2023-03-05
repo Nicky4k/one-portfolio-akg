@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { png } from "./Experience";
+import { images } from "../assets/ImageGallery";
 
 type Props = {};
 
@@ -10,14 +10,15 @@ const Projects = (props: Props) => {
       id: 0,
       name: "Burner Chat",
       toolsUsed: [
-        png.css,
-        png.html,
-        png.node,
-        png.express,
-        png.redux,
-        png.react,
-        png.mui,
-        png.testingRTL,
+        images.css,
+        images.javascript,
+        images.html,
+        images.nodeJS,
+        images.expressJs,
+        images.redux,
+        images.react,
+        images.mui,
+        images.reactTestingLibrary,
       ],
       description: "MERN chat app",
       features: [
@@ -221,8 +222,8 @@ const Projects = (props: Props) => {
                     key={i}
                     loading="lazy"
                     className="xl:md:h-10 h-7 w-10 object-contain m-1"
-                    src={tool}
-                    alt={tool}
+                    src={tool.imgLocation}
+                    alt={tool.toolName}
                   />
                 ))}
               </div>

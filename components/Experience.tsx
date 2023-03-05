@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCards from "./ExperienceCards";
+import { images } from "../assets/ImageGallery";
 
 type Props = {};
 
-export const png = {
+export const pngs = {
   java: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
   react:
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
@@ -26,6 +27,8 @@ export const png = {
   cognos:
     "https://www.element61.be/sites/default/files/img_competences/IBM%2520Cognos.png",
   watson: "https://logodix.com/logo/44000.png",
+  postman: "",
+  axios: "",
 };
 
 const Experience = (props: Props) => {
@@ -42,20 +45,21 @@ const Experience = (props: Props) => {
       companyImg: companies.udhd,
       jobTitle: "Front End Developer",
       tools: [
-        png.react,
-        png.redux,
-        png.testingRTL,
-        png.jest,
-        png.reduxSaga,
-        png.mui,
-        png.html,
-        png.css,
+        images.react,
+        images.redux,
+        images.reactTestingLibrary,
+        images.jest,
+        images.reduxSaga,
+        images.javascript,
+        images.mui,
+        images.html,
+        images.css,
       ],
       startDate: "March 2021",
       endDate: "Present",
       achievements: [
-        "Built single page progressive web apps and dashboards.",
-        "Building reusable functional components.",
+        "Built single page progressive web apps and scalable dashboards. Improved overall security.",
+        "Contributed to reusable functional components, compound components and render props design patterns.",
         "Optimised front-end performance.",
         "Unit and Integration Testing using Jest and React Testing Library.",
         "Worked with latest tech stack: React JS, Redux-Saga, RESTful APIs, Express JS, and ES6.",
@@ -68,24 +72,26 @@ const Experience = (props: Props) => {
       companyImg: companies.freelance,
       jobTitle: "Front end Web Developer",
       tools: [
-        png.react,
-        png.redux,
-        png.testingRTL,
-        png.jest,
-        png.node,
-        png.express,
-        png.html,
-        png.css,
-        png.nextjs,
+        images.react,
+        images.redux,
+        images.reactTestingLibrary,
+        images.jest,
+        images.nodeJS,
+        images.expressJs,
+        images.javascript,
+        images.html,
+        images.css,
+        images.nextjs,
       ],
       startDate: "August 2019",
       endDate: "Feb 2021",
       achievements: [
-        "Developed highly performant and responsive UI.",
-        "Worked with RESTful APIs. ",
+        "Developed highly performant and responsive UI. Increased loading time by 26%.",
+        "Worked with RESTful APIs.",
         "JavaScript Unit tests using Jest and RTL.",
         "Experience and basic knowledge with Node JS and Express JS. ",
         "Built Eye catching and animated front end UI with Tailwind CSS and Framer Motion.",
+        "Optimized performance and reduced build bundle size by 10%.",
       ],
       no: "2 of 3",
     },
@@ -93,14 +99,15 @@ const Experience = (props: Props) => {
       company: "IBM",
       companyImg: companies.ibm,
       jobTitle: "Java Developer",
-      tools: [png.java, png.sql, png.cognos, png.watson, png.msOffice],
+      tools: [pngs.java, images.mysql, pngs.cognos, pngs.watson, pngs.msOffice],
       startDate: "July 2015",
       endDate: "March 2017",
       achievements: [
         "Built interactive dashboards for international clients.",
+        "Boosted client sales by 2.5%.",
         "Collaborated with large team of developers and developed features in agile.",
         "Experience working with MySQL.",
-        "Resarch & Analytics",
+        "Completed 100% tasks within deadline, awarded Employee of the year in Research & Analytics Departement.",
       ],
       no: "3 of 3",
     },

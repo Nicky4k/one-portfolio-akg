@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SkillAvatar from "./SkillAvatar";
-import { png } from "./Experience";
+import { images } from "../assets/ImageGallery";
+
+console.log(images);
 
 type Props = {};
 
@@ -27,8 +29,8 @@ const Skills = (props: Props) => {
         Hover over a skill for info
       </h3>
 
-      <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-4 xl:p-60 ">
-        {Object.entries(png).map((skill, i) => (
+      <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-6 xl:p-60 ">
+        {Object.entries(images).map((skill, i) => (
           <SkillAvatar key={i} props={skill} />
         ))}
       </div>
