@@ -86,7 +86,7 @@ const Experience = (props: Props) => {
       startDate: "August 2019",
       endDate: "Feb 2021",
       achievements: [
-        "Developed highly performant and responsive UI. Increased loading time by 26%.",
+        "Developed highly performant and responsive UI. Descreased loading time by 26%.",
         "Worked with RESTful APIs.",
         "JavaScript Unit tests using Jest and RTL.",
         "Experience and basic knowledge with Node JS and Express JS. ",
@@ -99,7 +99,7 @@ const Experience = (props: Props) => {
       company: "IBM",
       companyImg: companies.ibm,
       jobTitle: "Java Developer",
-      tools: [pngs.java, images.mysql, pngs.cognos, pngs.watson, pngs.msOffice],
+      tools: [images.mysql, images.java, images.msOffice],
       startDate: "July 2015",
       endDate: "March 2017",
       achievements: [
@@ -107,7 +107,7 @@ const Experience = (props: Props) => {
         "Boosted client sales by 2.5%.",
         "Collaborated with large team of developers and developed features in agile.",
         "Experience working with MySQL.",
-        "Completed 100% tasks within deadline, awarded Employee of the year in Research & Analytics Departement.",
+        "Completed 100% tasks within deadline, awarded Employee of the year in Research & Analytics Department.",
       ],
       no: "3 of 3",
     },

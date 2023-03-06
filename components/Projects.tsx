@@ -11,9 +11,109 @@ const Projects = (props: Props) => {
       name: "Tesla Clone",
       toolsUsed: [images.react, images.css, images.firebase, images.html],
       description: "Tesla UI with smooth scroll.",
-      siteLink: "abc.com",
-      sourceCode: "github.com/abc",
-      projectDemoImg: "",
+      siteLink: "https://teslaportfolio14oct.web.app/",
+      projectDemoImg: "/tesla.JPG",
+    },
+    {
+      id: 6,
+      name: "Amazon Clone",
+      description:
+        "Amazon clone with add products to cart features, login and logout.",
+      projectDemoImg: "/amazonclone.png",
+      toolsUsed: [
+        images.javascript,
+        images.firebase,
+        images.react,
+        images.reactRouterDom,
+        images.redux,
+        images.css,
+        images.html,
+        images.mui,
+      ],
+      siteLink: "https://shop-stop-app.web.app/",
+    },
+
+    {
+      id: 1,
+      name: "Deliveroo",
+      description: "Food devlivery app with cart features.",
+      projectDemoImg: "/deliveroo.JPG",
+      toolsUsed: [
+        images.react,
+        images.redux,
+        images.firebase,
+        images.javascript,
+        images.reactTestingLibrary,
+        images.css,
+        images.html,
+      ],
+      siteLink: "https://react-eats-in.web.app/",
+    },
+
+    {
+      id: 9,
+      name: "Pagination Component",
+      description: "Dividing API response to descrete pages in a beautiful UI.",
+      projectDemoImg: "/thumbnail-pagintion.png",
+      toolsUsed: [
+        images.javascript,
+        images.axios,
+        images.react,
+        images.redux,
+        images.css,
+        images.html,
+      ],
+      siteLink:
+        "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-react-reactnative-activity-7010258308729118720-rmE8?utm_source=share&utm_medium=member_desktop",
+      sourceCode:
+        "https://github.com/Nicky4k/React-Machine-Coding-Round/tree/main/Pagination/pagination",
+    },
+    {
+      id: 9,
+      description:
+        "Animated Side Bar Navigation menu you use on VS Code, Code SandBox.",
+      name: "Sidebar Navigation",
+      projectDemoImg: "/sidebar-file-explorer.JPG",
+      toolsUsed: [images.react, images.javascript, images.css, images.html],
+      siteLink:
+        "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-react-reactnative-activity-7007621377893552128-sqk9?utm_source=share&utm_medium=member_desktop",
+      sourceCode:
+        "https://codesandbox.io/s/github/Nicky4k/Sidebar-FileExplorer",
+    },
+    {
+      id: 9,
+      name: "Calendar Component",
+      description:
+        "Your favourite calendar app with tasks built from Vanilla JavaScript.",
+      projectDemoImg: "/calendar.JPG",
+      toolsUsed: [images.javascript, images.css, images.html],
+      siteLink:
+        "https://www.linkedin.com/posts/ashwini-gupta-29855296_vanillajs-ui-interview-activity-7005037042850050048-Cqhf?utm_source=share&utm_medium=member_desktop",
+      sourceCode: "https://github.com/Nicky4k/Vanilla-JS-UI/tree/main/CALENDAR",
+    },
+    {
+      id: 9,
+      name: "Calculator",
+      description: "Calculator app built with Vanilla JavaScript.",
+      projectDemoImg: "/calculator.JPG",
+      toolsUsed: [images.javascript, images.css, images.html],
+      siteLink:
+        "https://www.linkedin.com/posts/ashwini-gupta-29855296_javascript-vanillajs-html-activity-7005400150835679232-Brlv?utm_source=share&utm_medium=member_desktop",
+      sourceCode: "https://github.com/Nicky4k/Vanilla-JS-UI/tree/main/CALCY",
+    },
+    {
+      id: 12,
+      name: "Expense tracker",
+      description: "Monitor and categorize your expenses.",
+      projectDemoImg: "/expense-tracker.JPG",
+      toolsUsed: [
+        images.firebase,
+        images.react,
+        images.javascript,
+        images.css,
+        images.html,
+      ],
+      siteLink: "https://expens-trackr.web.app/",
     },
     {
       id: 10,
@@ -27,9 +127,8 @@ const Projects = (props: Props) => {
       ],
       description:
         "Smart clone of Google Drive with login and file upload features.",
-      siteLink: "abc.com",
-      sourceCode: "github.com/abc",
-      projectDemoImg: "",
+      siteLink: "https://turbofueldrive.web.app/",
+      projectDemoImg: "/turbodrive.JPG",
     },
     {
       id: 10,
@@ -37,10 +136,13 @@ const Projects = (props: Props) => {
       toolsUsed: [images.css, images.javascript, images.html],
       description:
         "Search box autocomplete, debouncing, suggestions using local storage API.",
-      siteLink: "abc.com",
-      sourceCode: "github.com/abc",
+      siteLink:
+        "https://www.linkedin.com/posts/ashwini-gupta-29855296_hiring-remotejobs-freelancing-activity-7012056620197195776-fiXx?utm_source=share&utm_medium=member_desktop",
+      sourceCode:
+        "https://github.com/Nicky4k/Vanilla-JS-UI/tree/main/Autocomplete-Typeahead",
       projectDemoImg: "/auto-complate-typeahead.png",
     },
+
     {
       id: 0,
       name: "Burner Chat",
@@ -64,122 +166,7 @@ const Projects = (props: Props) => {
         "full stack app",
         "web socket implementation",
       ],
-      sourceCode: "github.com/abc",
-    },
-    {
-      id: 1,
-      name: "Deliveroo",
-      description: "Food devlivery app with cart features.",
-      projectDemoImg: "",
-      toolsUsed: [
-        images.react,
-        images.redux,
-        images.firebase,
-        images.javascript,
-        images.reactTestingLibrary,
-        images.css,
-        images.html,
-      ],
-      siteLink: "abc.com",
-      sourceCode: "github.com/abc",
-    },
-    {
-      id: 2,
-      name: "Netflix Clone",
-      description: "Netflix clone with TMDB movie database.",
-      projectDemoImg: "",
-      toolsUsed: [
-        images.firebase,
-        images.reactRouterDom,
-        images.axios,
-        images.react,
-        images.redux,
-        images.javascript,
-        images.css,
-        images.html,
-      ],
-      siteLink: "abc.com",
-      sourceCode: "github.com/abc",
-    },
-
-    {
-      id: 6,
-      name: "Amazon Clone",
-      description:
-        "Amazon clone with add products to cart features, login and logout.",
-      projectDemoImg: "",
-      toolsUsed: [
-        images.javascript,
-        images.firebase,
-        images.react,
-        images.reactRouterDom,
-        images.redux,
-        images.css,
-        images.html,
-        images.mui,
-      ],
-      siteLink: "abc.com",
-    },
-
-    {
-      id: 9,
-      name: "Pagination Component",
-      description: "Dividing API response to descrete pages in a beautiful UI.",
-      projectDemoImg: "/thumbnail-pagintion.png",
-      toolsUsed: [
-        images.javascript,
-        images.axios,
-        images.react,
-        images.redux,
-        images.css,
-        images.html,
-      ],
-      siteLink: "linkedIn link",
-      sourceCode: "github.com/abc",
-    },
-    {
-      id: 9,
-      description:
-        "Animated Side Bar Navigation menu you use on VS Code, Code SandBox.",
-      name: "Sidebar Navigation",
-      projectDemoImg: "/sidebar-file-explorer.JPG",
-      toolsUsed: [images.react, images.javascript, images.css, images.html],
-      siteLink: "linkedIn link",
-      sourceCode: "github.com/abc",
-    },
-    {
-      id: 9,
-      name: "Calendar Component",
-      description:
-        "Your favourite calendar app with tasks built from Vanilla JavaScript.",
-      projectDemoImg: "/calendar.JPG",
-      toolsUsed: [images.javascript, images.css, images.html],
-      siteLink: "linked in link",
-      sourceCode: "github.com/abc",
-    },
-    {
-      id: 9,
-      name: "Calculator",
-      description: "Calculator app built with Vanilla JavaScript.",
-      projectDemoImg: "/calculator.JPG",
-      toolsUsed: [images.javascript, images.css, images.html],
-      siteLink: "linked in link",
-      sourceCode: "github.com/abc",
-    },
-    {
-      id: 12,
-      name: "Expense tracker",
-      description: "Monitor and categorize your expenses.",
-      projectDemoImg: "",
-      toolsUsed: [
-        images.firebase,
-        images.react,
-        images.javascript,
-        images.css,
-        images.html,
-      ],
-      siteLink: "site link",
-      sourceCode: "github.com/abc",
+      sourceCode: "https://github.com/Nicky4k/burner",
     },
     {
       id: 10,
@@ -187,8 +174,25 @@ const Projects = (props: Props) => {
       description: "Fun dice rolling game.",
       projectDemoImg: "/tenzie-game.JPG",
       toolsUsed: [images.react, images.javascript, images.css, images.html],
-      siteLink: "linkedIn video link",
-      sourceCode: "github.com/abc",
+      siteLink:
+        "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-100daysofcode-100daysofcodechallenge-activity-7022592202367270912-eFiy/?utm_source=share&utm_medium=member_desktop",
+      sourceCode:
+        "https://github.com/Nicky4k/FreeCodeCamp-React/tree/main/react-course",
+    },
+    {
+      id: 15,
+      name: "To Do & Test",
+      toolsUsed: [
+        images.react,
+        images.reactTestingLibrary,
+        images.jest,
+        images.css,
+        images.javascript,
+        images.html,
+      ],
+      description: "To Do App with Unit and Intergation Tests.",
+      sourceCode: "https://github.com/Nicky4k/React-Testing-Library-App",
+      projectDemoImg: "/todo-react-testing-library.JPG",
     },
     // {
     //   id: 3,

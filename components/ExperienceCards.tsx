@@ -1,6 +1,23 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  key: number;
+  props: {
+    company: string;
+    companyImg: string;
+    jobTitle: string;
+    tools: {
+      toolName: string;
+      imgLocation: string;
+      proficiency: string;
+      level: string;
+    }[];
+    startDate: string;
+    endDate: string;
+    achievements: string[];
+    no: string;
+  };
+};
 import { motion } from "framer-motion";
 
 const ExperienceCards = (props: Props) => {
@@ -37,7 +54,7 @@ const ExperienceCards = (props: Props) => {
         <p className="py-2 text-gray-300">
           {props.props.startDate} - {props.props.endDate}
         </p>
-        <div className="flex space-x-2 my-1 flex flex-wrap">
+        <div className="flex space-x-2 my-1  flex-wrap">
           {props.props.tools.map((tool, i) => (
             <img
               key={i}

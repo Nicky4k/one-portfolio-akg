@@ -1,6 +1,18 @@
 import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 
+type Props = {
+  props: [
+    string,
+    {
+      toolName: string;
+      imgLocation: string;
+      proficiency: string;
+      level: string;
+    }
+  ];
+};
+
 const SkillAvatar = (props: Props) => {
   return (
     <div className="group relative flex cursor-pointer m-2">

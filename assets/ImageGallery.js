@@ -55,6 +55,14 @@ export const images = {
     proficiency: "70%",
     level: skillLevel.c,
   },
+
+  java: {
+    toolName: "Java",
+    imgLocation: "/java.png",
+    proficiency: "25%",
+    level: skillLevel.a,
+  },
+
   javascript: {
     toolName: "JavaScript",
     imgLocation: "/javascript-logo-4.png",
@@ -76,6 +84,12 @@ export const images = {
   mui: {
     toolName: "MUI",
     imgLocation: "/mui.png",
+    proficiency: "40%",
+    level: skillLevel.a,
+  },
+  msOffice: {
+    toolName: "MS Office",
+    imgLocation: "/ms-office.png",
     proficiency: "40%",
     level: skillLevel.a,
   },

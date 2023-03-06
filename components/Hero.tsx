@@ -2,7 +2,6 @@ import React from "react";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
-import displayPicture from "../assets/my-pic-dp-square.JPG";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -23,10 +22,10 @@ const Hero = (props: Props) => {
   return (
     <div className="h-screen flex flex-col space-y-10 pt-20 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <Image
+      <img
         loading="lazy"
         className="relative mx-auto rounded-full h-32 w-32 object-cover"
-        src={displayPicture}
+        src="/my-pic-dp-square.JPG"
         alt="display picture"
       />
       <div className="z-10">
