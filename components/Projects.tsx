@@ -7,8 +7,44 @@ type Props = {};
 const Projects = (props: Props) => {
   const projects = [
     {
+      id: 10,
+      name: "Tesla Clone",
+      toolsUsed: [images.react, images.css, images.firebase, images.html],
+      description: "Tesla UI with smooth scroll.",
+      siteLink: "abc.com",
+      sourceCode: "github.com/abc",
+      projectDemoImg: "",
+    },
+    {
+      id: 10,
+      name: "Turbo Drive",
+      toolsUsed: [
+        images.react,
+        images.firebase,
+        images.css,
+        images.javascript,
+        images.html,
+      ],
+      description:
+        "Smart clone of Google Drive with login and file upload features.",
+      siteLink: "abc.com",
+      sourceCode: "github.com/abc",
+      projectDemoImg: "",
+    },
+    {
+      id: 10,
+      name: "Auto Complete Typeahead",
+      toolsUsed: [images.css, images.javascript, images.html],
+      description:
+        "Search box autocomplete, debouncing, suggestions using local storage API.",
+      siteLink: "abc.com",
+      sourceCode: "github.com/abc",
+      projectDemoImg: "/auto-complate-typeahead.png",
+    },
+    {
       id: 0,
       name: "Burner Chat",
+      projectDemoImg: "",
       toolsUsed: [
         images.css,
         images.javascript,
@@ -18,154 +54,214 @@ const Projects = (props: Props) => {
         images.redux,
         images.react,
         images.mui,
+        images.postman,
         images.reactTestingLibrary,
       ],
-      description: "MERN chat app",
+      description:
+        "MERN chat app with 'typing...' indicator built using Socket IO.",
       features: [
         "functional components",
         "full stack app",
         "web socket implementation",
       ],
-      projXOfX: "1 of 12",
-      siteLink: "abc.com",
       sourceCode: "github.com/abc",
     },
     {
       id: 1,
       name: "Deliveroo",
-      toolsUsed: ["react png", "redux png", "mongo db", "node", "express"],
-      projXOfX: "2 of 12",
+      description: "Food devlivery app with cart features.",
+      projectDemoImg: "",
+      toolsUsed: [
+        images.react,
+        images.redux,
+        images.firebase,
+        images.javascript,
+        images.reactTestingLibrary,
+        images.css,
+        images.html,
+      ],
+      siteLink: "abc.com",
+      sourceCode: "github.com/abc",
     },
     {
       id: 2,
-      name: "DevFlix",
+      name: "Netflix Clone",
+      description: "Netflix clone with TMDB movie database.",
+      projectDemoImg: "",
       toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
+        images.firebase,
+        images.reactRouterDom,
+        images.axios,
+        images.react,
+        images.redux,
+        images.javascript,
+        images.css,
+        images.html,
       ],
-      projXOfX: "3 of 12",
+      siteLink: "abc.com",
+      sourceCode: "github.com/abc",
     },
-    {
-      id: 3,
-      name: "Mapty",
-      toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
-      ],
-      projXOfX: "4 of 12",
-    },
-    {
-      id: 4,
-      name: "Natours",
-      toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
-      ],
-      projXOfX: "5 of 12",
-    },
-    {
-      id: 5,
-      name: "Forkify",
-      toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
-      ],
-      projXOfX: "6 of 12",
-    },
+
     {
       id: 6,
       name: "Amazon Clone",
+      description:
+        "Amazon clone with add products to cart features, login and logout.",
+      projectDemoImg: "",
       toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
+        images.javascript,
+        images.firebase,
+        images.react,
+        images.reactRouterDom,
+        images.redux,
+        images.css,
+        images.html,
+        images.mui,
       ],
-      projXOfX: "7 of 12",
+      siteLink: "abc.com",
     },
+
     {
-      id: 7,
-      name: "WhatsApp Clone",
+      id: 9,
+      name: "Pagination Component",
+      description: "Dividing API response to descrete pages in a beautiful UI.",
+      projectDemoImg: "/thumbnail-pagintion.png",
       toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
+        images.javascript,
+        images.axios,
+        images.react,
+        images.redux,
+        images.css,
+        images.html,
       ],
-      projXOfX: "8 of 12",
-    },
-    {
-      id: 8,
-      name: "Youtube Clone",
-      toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
-      ],
-      projXOfX: "9 of 12",
+      siteLink: "linkedIn link",
+      sourceCode: "github.com/abc",
     },
     {
       id: 9,
+      description:
+        "Animated Side Bar Navigation menu you use on VS Code, Code SandBox.",
+      name: "Sidebar Navigation",
+      projectDemoImg: "/sidebar-file-explorer.JPG",
+      toolsUsed: [images.react, images.javascript, images.css, images.html],
+      siteLink: "linkedIn link",
+      sourceCode: "github.com/abc",
+    },
+    {
+      id: 9,
+      name: "Calendar Component",
+      description:
+        "Your favourite calendar app with tasks built from Vanilla JavaScript.",
+      projectDemoImg: "/calendar.JPG",
+      toolsUsed: [images.javascript, images.css, images.html],
+      siteLink: "linked in link",
+      sourceCode: "github.com/abc",
+    },
+    {
+      id: 9,
+      name: "Calculator",
+      description: "Calculator app built with Vanilla JavaScript.",
+      projectDemoImg: "/calculator.JPG",
+      toolsUsed: [images.javascript, images.css, images.html],
+      siteLink: "linked in link",
+      sourceCode: "github.com/abc",
+    },
+    {
+      id: 12,
       name: "Expense tracker",
+      description: "Monitor and categorize your expenses.",
+      projectDemoImg: "",
       toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
+        images.firebase,
+        images.react,
+        images.javascript,
+        images.css,
+        images.html,
       ],
-      projXOfX: "10 of 12",
+      siteLink: "site link",
+      sourceCode: "github.com/abc",
     },
     {
       id: 10,
       name: "Tenzie",
-      toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
-      ],
-      projXOfX: "11 of 12",
+      description: "Fun dice rolling game.",
+      projectDemoImg: "/tenzie-game.JPG",
+      toolsUsed: [images.react, images.javascript, images.css, images.html],
+      siteLink: "linkedIn video link",
+      sourceCode: "github.com/abc",
     },
-    {
-      id: 11,
-      name: "Tinder Clone",
-      toolsUsed: [
-        "react png",
-        "redux png",
-        "mongo db",
-        "node",
-        "express",
-        "tmdb",
-      ],
-      projXOfX: "11 of 12",
-    },
+    // {
+    //   id: 3,
+    //   name: "Mapty",
+    //   toolsUsed: [
+    //     "react png",
+    //     "redux png",
+    //     "mongo db",
+    //     "node",
+    //     "express",
+    //     "tmdb",
+    //   ],
+    // },
+    // {
+    //   id: 4,
+    //   name: "Natours",
+    //   toolsUsed: [
+    //     "react png",
+    //     "redux png",
+    //     "mongo db",
+    //     "node",
+    //     "express",
+    //     "tmdb",
+    //   ],
+    // },
+    // {
+    //   id: 5,
+    //   name: "Forkify",
+    //   toolsUsed: [
+    //     "react png",
+    //     "redux png",
+    //     "mongo db",
+    //     "node",
+    //     "express",
+    //     "tmdb",
+    //   ],
+    // },
+    // {
+    //   id: 11,
+    //   name: "Tinder Clone",
+    //   toolsUsed: [
+    //     "react png",
+    //     "redux png",
+    //     "mongo db",
+    //     "node",
+    //     "express",
+    //     "tmdb",
+    //   ],
+    // },
+    // {
+    //   id: 7,
+    //   name: "WhatsApp Clone",
+    //   toolsUsed: [
+    //     "react png",
+    //     "redux png",
+    //     "mongo db",
+    //     "node",
+    //     "express",
+    //     "tmdb",
+    //   ],
+    // },
+    // {
+    //   id: 8,
+    //   name: "Youtube Clone",
+    //   toolsUsed: [
+    //     "react png",
+    //     "redux png",
+    //     "mongo db",
+    //     "node",
+    //     "express",
+    //     "tmdb",
+    //   ],
+    // },
   ];
   return (
     <motion.div
@@ -205,18 +301,16 @@ const Projects = (props: Props) => {
                   y: 0,
                 }}
                 viewport={{ once: true }}
-                className="object-contain w-45 h-56 mb-2 rounded-lg"
-                src="https://www.notebookcheck.com/fileadmin/Notebooks/News/_nc3/Apple_soll_noch_im_August_neuen_iMac_bringen.jpg"
-                alt="project description"
+                className="object-contain w-45 h-56 xl:h-80 mb-2 rounded-lg"
+                src={project.projectDemoImg}
               />
-              <div>
-                <h4 className="tracking-[4px] text-zinc-300 text-xl py-2">
-                  {project.name}
-                </h4>
-              </div>
+              <div></div>
             </div>
             <div className="flex flex-col w-100 justify-start border-zinc-900 border-2 border-solid rounded-xl py-5 px-4">
-              <div className="flex space-x-2 my-1 flex flex-wrap xl:py-2">
+              <h4 className="tracking-[4px] text-zinc-300 text-xl py-2">
+                {project.name}
+              </h4>
+              <div className="flex space-x-2 my-1  flex-wrap xl:py-2">
                 {project.toolsUsed.map((tool, i) => (
                   <img
                     key={i}
@@ -228,7 +322,7 @@ const Projects = (props: Props) => {
                 ))}
               </div>
               <div>
-                <p className="text-zinc-200 text-xl pb-2">
+                <p className="text-zinc-500 text-base pb-2">
                   {project.description}
                 </p>
               </div>
@@ -241,12 +335,20 @@ const Projects = (props: Props) => {
                   ))}
               </ul>
               <div className="flex gap-5 my-2 pt-2 xl:pt-5">
-                <button className="heroButton">Live site</button>
-                <button className="heroButton">GitHub</button>
+                {project.siteLink && (
+                  <a href={project.siteLink} target="_blank">
+                    <button className="heroButton">Live site</button>
+                  </a>
+                )}
+                {project.sourceCode && (
+                  <a href={project.sourceCode} target="_blank">
+                    <button className="heroButton">GitHub</button>
+                  </a>
+                )}
               </div>
               <div className="pt-4 ">
                 <p className="text-zinc-500 bg-zinc-900 w-16 text-center rounded-xl">
-                  {project.projXOfX}
+                  {i + 1} of {projects.length}
                 </p>
               </div>
             </div>
@@ -254,7 +356,7 @@ const Projects = (props: Props) => {
         ))}
       </div>
       <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
-      <p className="absolute bottom-5 text-zinc-500 bg-zinc-800 px-5 rounded-xl py-0.5">
+      <p className="absolute bottom-5 text-zinc-400 bg-zinc-900 px-5 rounded-xl py-0.5">
         swipe horizontally for more projects
       </p>
     </motion.div>

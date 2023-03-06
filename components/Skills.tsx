@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import SkillAvatar from "./SkillAvatar";
 import { images } from "../assets/ImageGallery";
 
-console.log(images);
-
 type Props = {};
 
 const Skills = (props: Props) => {

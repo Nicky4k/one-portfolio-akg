@@ -70,7 +70,7 @@ export const images = {
   mongodb: {
     toolName: "mongo DB",
     imgLocation: "/mongodb-5-1175140.webp",
-    proficiency: "40%",
+    proficiency: "25%",
     level: skillLevel.a,
   },
   mui: {
@@ -88,13 +88,13 @@ export const images = {
   nextjs: {
     toolName: "Next JS",
     imgLocation: "/nextjs.png",
-    proficiency: "30%",
+    proficiency: "25%",
     level: skillLevel.a,
   },
   nodeJS: {
     toolName: "Node JS",
     imgLocation: "/node.png",
-    proficiency: "50%",
+    proficiency: "25%",
     level: skillLevel.a,
   },
   postman: {

@@ -41,7 +41,7 @@ const Experience = (props: Props) => {
 
   const expArr = [
     {
-      company: "UDHD Govt of India",
+      company: "Urban Development and Housing Department, Govt of India",
       companyImg: companies.udhd,
       jobTitle: "Front End Developer",
       tools: [
