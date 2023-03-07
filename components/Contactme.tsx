@@ -24,34 +24,35 @@ const Contactme = (props: Props) => {
         Contact
       </h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-2xl font-semibold text-center text-gray-300/100">
-          I have got just what you need.
+        <h4 className="xl:md:text-2xl text-xl font-semibold text-center text-gray-300/100">
+          I have got just what you need.{" "}
           <span className="underline decoration-yellow-500 text-gray-100/100">
-            {" "}
-            Lets Talk.
+            Let's Talk.
           </span>
         </h4>
         <div>
           <div className="flex items-center space-x-5  justify-center">
             <PhoneIcon className="text-yellow-500 h-7 w-7 animate-pulse" />
-            <p className="text-2xl text-gray-500/100">
+            <p className="xl:md:text-2xl text-xl text-gray-500/100">
               <a href="tel:+919148669104">+91 9148669104</a>
             </p>
           </div>
           <div className="flex items-center space-x-5 justify-center py-1">
             <EnvelopeIcon className="text-yellow-500 h-7 w-7 animate-pulse " />
-            <p className="text-2xl text-gray-500/100">
+            <p className="xl:md:text-2xl text-xl text-gray-500/100">
               ashwinigupta0126@gmail.com
             </p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
             <MapPinIcon className="text-yellow-500 h-7 w-7 animate-pulse" />
-            <p className="text-2xl text-gray-500/100">Bengaluru, India</p>
+            <p className="xl:md:text-2xl text-xl text-gray-500/100">
+              Bengaluru, India
+            </p>
           </div>
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-fit  mx-auto"
         >
           <div className="flex space-x-2">
             <input

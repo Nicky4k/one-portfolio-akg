@@ -6,6 +6,15 @@ import { images } from "../assets/ImageGallery";
 type Props = {};
 
 const Skills = (props: Props) => {
+  const exclude = [
+    "java",
+    "nextjs",
+    "nodeJS",
+    "axios",
+    "expressJs",
+    "reactRouterDom",
+  ];
+
   return (
     <motion.div
       initial={{
@@ -27,10 +36,12 @@ const Skills = (props: Props) => {
         Hover over a skill for info
       </h3>
 
-      <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-7 xl:p-60 ">
-        {Object.entries(images).map((skill, i) => (
-          <SkillAvatar key={i} props={skill} />
-        ))}
+      <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-5 xl:p-60 ">
+        {Object.entries(images)
+          .filter((skill) => !exclude.includes(skill[0]))
+          .map((skill, i) => (
+            <SkillAvatar key={i} props={skill} />
+          ))}
       </div>
     </motion.div>
   );

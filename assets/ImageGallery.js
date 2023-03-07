@@ -84,7 +84,7 @@ export const images = {
   mui: {
     toolName: "MUI",
     imgLocation: "/mui.png",
-    proficiency: "40%",
+    proficiency: "25%",
     level: skillLevel.a,
   },
   msOffice: {

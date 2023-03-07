@@ -11,6 +11,7 @@ const Projects = (props: Props) => {
       name: "Tesla Clone",
       toolsUsed: [images.react, images.css, images.firebase, images.html],
       description: "Tesla UI with smooth scroll.",
+      features: ["responsive design", "deployed using firebase CLI"],
       siteLink: "https://teslaportfolio14oct.web.app/",
       projectDemoImg: "/tesla.JPG",
     },
@@ -30,6 +31,12 @@ const Projects = (props: Props) => {
         images.html,
         images.mui,
       ],
+      features: [
+        "add to cart",
+        "login",
+        "add new products to inventory",
+        "firebase backend",
+      ],
       siteLink: "https://shop-stop-app.web.app/",
     },
 
@@ -47,6 +54,7 @@ const Projects = (props: Props) => {
         images.css,
         images.html,
       ],
+      features: ["firebase integration", "add to cart and remove from cart"],
       siteLink: "https://react-eats-in.web.app/",
     },
 
@@ -63,6 +71,11 @@ const Projects = (props: Props) => {
         images.css,
         images.html,
       ],
+      features: [
+        "results per page filter",
+        "responsive design",
+        "buttons responsive to total results",
+      ],
       siteLink:
         "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-react-reactnative-activity-7010258308729118720-rmE8?utm_source=share&utm_medium=member_desktop",
       sourceCode:
@@ -75,6 +88,7 @@ const Projects = (props: Props) => {
       name: "Sidebar Navigation",
       projectDemoImg: "/sidebar-file-explorer.JPG",
       toolsUsed: [images.react, images.javascript, images.css, images.html],
+      features: ["add, rename and delete file/folders"],
       siteLink:
         "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-react-reactnative-activity-7007621377893552128-sqk9?utm_source=share&utm_medium=member_desktop",
       sourceCode:
@@ -83,6 +97,7 @@ const Projects = (props: Props) => {
     {
       id: 9,
       name: "Calendar Component",
+      features: ["change months", "add tasks"],
       description:
         "Your favourite calendar app with tasks built from Vanilla JavaScript.",
       projectDemoImg: "/calendar.JPG",
@@ -106,6 +121,11 @@ const Projects = (props: Props) => {
       name: "Expense tracker",
       description: "Monitor and categorize your expenses.",
       projectDemoImg: "/expense-tracker.JPG",
+      features: [
+        "responsive design",
+        "add and delete expenses",
+        "manage expenses with ease",
+      ],
       toolsUsed: [
         images.firebase,
         images.react,
@@ -125,6 +145,7 @@ const Projects = (props: Props) => {
         images.javascript,
         images.html,
       ],
+      features: ["google authentication", "upload files"],
       description:
         "Smart clone of Google Drive with login and file upload features.",
       siteLink: "https://turbofueldrive.web.app/",
@@ -134,8 +155,12 @@ const Projects = (props: Props) => {
       id: 10,
       name: "Auto Complete Typeahead",
       toolsUsed: [images.css, images.javascript, images.html],
-      description:
-        "Search box autocomplete, debouncing, suggestions using local storage API.",
+      description: "search IPL player names",
+      features: [
+        "Search box autocomplete suggestions",
+        "debouncing",
+        "suggestions fetched from local storage API.",
+      ],
       siteLink:
         "https://www.linkedin.com/posts/ashwini-gupta-29855296_hiring-remotejobs-freelancing-activity-7012056620197195776-fiXx?utm_source=share&utm_medium=member_desktop",
       sourceCode:
@@ -153,6 +178,7 @@ const Projects = (props: Props) => {
         images.html,
         images.nodeJS,
         images.expressJs,
+        images.mongodb,
         images.redux,
         images.react,
         images.mui,
@@ -173,6 +199,7 @@ const Projects = (props: Props) => {
       name: "Tenzie",
       description: "Fun dice rolling game.",
       projectDemoImg: "/tenzie-game.JPG",
+      features: ["sleek implementation of react hooks", "responsive design"],
       toolsUsed: [images.react, images.javascript, images.css, images.html],
       siteLink:
         "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-100daysofcode-100daysofcodechallenge-activity-7022592202367270912-eFiy/?utm_source=share&utm_medium=member_desktop",
@@ -191,6 +218,11 @@ const Projects = (props: Props) => {
         images.html,
       ],
       description: "To Do App with Unit and Intergation Tests.",
+      features: [
+        "add tasks and mark done",
+        "unit tests",
+        "Jest and React Testing Library",
+      ],
       sourceCode: "https://github.com/Nicky4k/React-Testing-Library-App",
       projectDemoImg: "/todo-react-testing-library.JPG",
     },
@@ -326,7 +358,7 @@ const Projects = (props: Props) => {
                 ))}
               </div>
               <div>
-                <p className="text-zinc-500 text-base pb-2">
+                <p className="text-zinc-400 text-base pb-2">
                   {project.description}
                 </p>
               </div>
@@ -341,7 +373,7 @@ const Projects = (props: Props) => {
               <div className="flex gap-5 my-2 pt-2 xl:pt-5">
                 {project.siteLink && (
                   <a href={project.siteLink} target="_blank">
-                    <button className="heroButton">Live site</button>
+                    <button className="heroButton">Preview</button>
                   </a>
                 )}
                 {project.sourceCode && (
@@ -351,7 +383,7 @@ const Projects = (props: Props) => {
                 )}
               </div>
               <div className="pt-4 ">
-                <p className="text-zinc-500 bg-zinc-900 w-16 text-center rounded-xl">
+                <p className="text-zinc-500 bg-zinc-900 w-20 text-center rounded-xl">
                   {i + 1} of {projects.length}
                 </p>
               </div>
@@ -359,7 +391,7 @@ const Projects = (props: Props) => {
           </div>
         ))}
       </div>
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
+      <div className="w-full absolute top-[30%] bg-[#4a9ad769]/10 left-0 h-[500px] -skew-y-12" />
       <p className="absolute bottom-5 text-zinc-400 bg-zinc-900 px-5 rounded-xl py-0.5">
         swipe horizontally for more projects
       </p>

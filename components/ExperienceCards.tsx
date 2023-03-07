@@ -39,16 +39,16 @@ const ExperienceCards = (props: Props) => {
           y: 0,
         }}
         viewport={{ once: true }}
-        className="w-24 h-24 object-contain
+        className="w-16 h-16 xl:w-24 xl:h-24 object-contain
          bg-white p-2 rounded-full"
         src={props.props.companyImg}
         alt={props.props.company}
       />
       <div className="">
-        <h4 className="text-2xl font-light text-gray-200">
+        <h4 className="text-xl font-light text-gray-200">
           {props.props.jobTitle}
         </h4>
-        <p className="font-bold text-2xl mt-1 text-gray-500">
+        <p className="font-base text-medium mt-1 text-gray-500">
           {props.props.company}
         </p>
         <p className="py-2 text-gray-300">
@@ -59,7 +59,7 @@ const ExperienceCards = (props: Props) => {
             <img
               key={i}
               loading="lazy"
-              className="xl:md:h-10 h-7 w-10 object-contain m-1"
+              className="xl:md:h-10 xl:md:w-10 h-7 w-7 object-contain m-1"
               src={tool.imgLocation}
               alt={tool.toolName}
             />
@@ -73,7 +73,9 @@ const ExperienceCards = (props: Props) => {
           ))}
         </ul>
         <div className="pt-4 ">
-          <p className="text-blue-700">{props.props.no}</p>
+          <p className="text-blue-400 text-center w-24 bottom-5 bg-zinc-900 px-5 rounded-xl py-0.5">
+            {props.props.no}
+          </p>
         </div>
       </div>
     </article>

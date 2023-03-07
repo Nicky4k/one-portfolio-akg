@@ -41,22 +41,23 @@ const About = (props: Props) => {
           scale: 1,
         }}
       >
-        <h4 className="text-2xl font-semibold md:px-5 xl:px-5 pb-4 xl:text-4xl md:text-3xl">
+        <h4 className="text-2xl font-semibold md:px-5 xl:px-20 pb-4 xl:text-4xl md:text-3xl">
           I welcome you to read a{" "}
-          <span className="underline decoration-[#F7AB0A]/40 text-gray-500">
+          <span className="underline decoration-blue-400 text-gray-500">
             little
           </span>{" "}
           bio
         </h4>
-        <p className="text-sm xl:text-base md:text-base xl:py-1 md:px-5 xl:px-5 text-gray-400">
+        <p className="text-sm xl:text-base md:text-base xl:py-1 md:px-5 xl:px-20 text-gray-400">
           I have been coding since 4th grade and have 5 years of experience in
-          IT, and 2 years of experience with React, JavaScript, and Redux. I
-          build dynamic, responsive, and progressive UI for real world business
-          problems.
-          <br />I am excited to learn about the opportunities and challenges
-          about the role you are interviewing. I'm confident that my skills and
-          experience match the requirements of the role. I would appretiate if
-          we could expedite the interviewing process.
+          IT including 2 years of experience with React, JavaScript, Redux and
+          UI development.
+          <br />
+          <br />
+          I'm confident that my skills and experience match the requirements of
+          the role you are interviewing. Introduce me to the opportunities &
+          challenges at your organization and I would appretiate if we can
+          expedite the interviewing process.
         </p>
       </motion.div>
     </div>
