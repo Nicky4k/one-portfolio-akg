@@ -339,6 +339,7 @@ const Projects = (props: Props) => {
                 viewport={{ once: true }}
                 className="object-contain w-45 h-56 xl:h-80 mb-2 rounded-lg"
                 src={project.projectDemoImg}
+                alt={project.name}
               />
               <div></div>
             </div>

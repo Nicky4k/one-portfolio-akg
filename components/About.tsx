@@ -23,6 +23,7 @@ const About = (props: Props) => {
           x: 0,
           opacity: 1,
         }}
+        alt="profile picture"
         className="-mb-20 md:mb-0 flex-shrink-0 w-40 h-40 xl:w-56 xl:h-56 mt-5 rounded-full object-cover"
         src="https://avatars.githubusercontent.com/u/87268446?v=4"
       />
