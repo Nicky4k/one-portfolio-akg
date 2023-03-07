@@ -15,7 +15,10 @@ type Props = {
 
 const SkillAvatar = (props: Props) => {
   return (
-    <div className="group relative flex cursor-pointer m-2">
+    <div
+      className="group relative flex cursor-pointer m-2 -webkit-touch-callout:none
+    -webkit-user-select:none -khtml-user-select:none -moz-user-select:none -ms-user-select:none user-select:none"
+    >
       <motion.img
         loading="lazy"
         initial={{
