@@ -58,7 +58,7 @@ const Experience = (props: Props) => {
       startDate: "March 2021",
       endDate: "Present",
       achievements: [
-        "Built single page progressive web apps and scalable dashboards. Improved overall security.",
+        "Built responsive UI and scalable dashboards. Improved overall security.",
         "Contributed to reusable functional components, compound components and render props design patterns.",
         "Optimised front-end performance.",
         "Unit and Integration Testing using Jest and React Testing Library.",
