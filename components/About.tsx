@@ -51,8 +51,8 @@ const About = (props: Props) => {
         </h4>
         <p className="text-sm xl:text-base md:text-base xl:py-1 md:px-5 xl:px-20 text-gray-400">
           I have been coding since 4th grade and have 5 years of experience in
-          IT including 2 years of experience with React, JavaScript, Redux and
-          UI development.
+          IT including 2 years of experience with React, JavaScript, Redux-Saga
+          and UI development.
           <br />
           Zeal to learn new tech.
           <br />
