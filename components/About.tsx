@@ -54,6 +54,8 @@ const About = (props: Props) => {
           IT including 2 years of experience with React, JavaScript, Redux and
           UI development.
           <br />
+          Zeal to learn new tech.
+          <br />
           <br />
           I'm confident that my skills and experience match the requirements of
           the role you are interviewing. Introduce me to the opportunities &

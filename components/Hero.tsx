@@ -1,5 +1,5 @@
 import React from "react";
-import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
       "<Black_Coffee.jsx />",
     ],
     loop: true,
-    delaySpeed: 2250,
+    delaySpeed: 1000,
   });
 
   return (

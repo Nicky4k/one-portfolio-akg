@@ -47,9 +47,11 @@ function Header({}: Props) {
             bgColor="transparent"
             id="email"
           />
+          <a href="mailto:ashwinigupta0126@gmail.com">
           <label htmlFor="email" className="text-gray-200/40 text-xs">
             Email
           </label>
+          </a>
         </div>
         <div className="flex flex-col items-center justify-center">
           <a id="call" href="tel:+919148669104">
