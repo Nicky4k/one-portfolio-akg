@@ -107,7 +107,7 @@ const Experience = (props: Props) => {
         "Boosted client sales by 2.5%.",
         "Collaborated with a large team of developers and developed features in agile.",
         "Experience working with MySQL.",
-        "Completed 100% of tasks within the deadline, awarded Employee of the year in Research & Analytics Department.",
+        "Completed 100% of the tasks within the deadline, awarded Employee of the year in Research & Analytics Department.",
       ],
       no: "3 of 3",
     },
