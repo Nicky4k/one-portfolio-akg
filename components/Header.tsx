@@ -48,9 +48,9 @@ function Header({}: Props) {
             id="email"
           />
           <a href="mailto:ashwinigupta0126@gmail.com">
-          <label htmlFor="email" className="text-gray-200/40 text-xs">
-            Email
-          </label>
+            <label htmlFor="email" className="text-gray-200/40 text-xs">
+              Email
+            </label>
           </a>
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -112,7 +112,7 @@ function Header({}: Props) {
           duration: 1,
         }}
         download={true}
-        href="https://drive.google.com/u/0/uc?id=1wBzyV8grDUQFbDYRnCF7RkBQdl4bidie&export=download"
+        href="https://drive.google.com/u/0/uc?id=19Eg2q4yn1g9OQyKLPcu-MWwiaQGC2-IN&export=download"
         target="_blank"
         rel="noopener noreferrer"
         className="p-4 flex flex-row items-center cursor-pointer"
