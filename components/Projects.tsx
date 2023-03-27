@@ -54,7 +54,11 @@ const Projects = (props: Props) => {
         images.css,
         images.html,
       ],
-      features: ["firebase integration", "add to cart and remove from cart", "state managed with Redux"],
+      features: [
+        "firebase integration",
+        "add to cart and remove from cart",
+        "state managed with Redux",
+      ],
       siteLink: "https://react-eats-in.web.app/",
     },
 
@@ -159,7 +163,7 @@ const Projects = (props: Props) => {
       features: [
         "Search box autocomplete suggestions",
         "debouncing",
-        "suggestions fetched from local storage API.",
+        "suggestions fetched from the local storage API.",
       ],
       siteLink:
         "https://www.linkedin.com/posts/ashwini-gupta-29855296_hiring-remotejobs-freelancing-activity-7012056620197195776-fiXx?utm_source=share&utm_medium=member_desktop",
@@ -191,6 +195,7 @@ const Projects = (props: Props) => {
         "functional components",
         "full stack app",
         "web socket implementation",
+        "modern and responsive design",
       ],
       sourceCode: "https://github.com/Nicky4k/burner",
     },
