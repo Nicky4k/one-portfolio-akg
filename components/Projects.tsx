@@ -54,7 +54,7 @@ const Projects = (props: Props) => {
         images.css,
         images.html,
       ],
-      features: ["firebase integration", "add to cart and remove from cart"],
+      features: ["firebase integration", "add to cart and remove from cart", "state managed with Redux"],
       siteLink: "https://react-eats-in.web.app/",
     },
 
