@@ -38,9 +38,9 @@ export default function Home() {
       <section id="projects" className="snap-start">
         <Projects />
       </section>
-      <section id="educationandcertifications" className="snap-start">
+      {/* <section id="educationandcertifications" className="snap-start">
         <EducationCertification />
-      </section>
+      </section> */}
       <section id="contactme" className="snap-start">
         <Contactme />
       </section>
