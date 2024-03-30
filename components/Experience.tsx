@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCards from "./ExperienceCards";
-import { images } from "../assets/ImageGallery";
+import { images, companyImages } from "../assets/ImageGallery";
 
 type Props = {};
 
@@ -32,17 +32,38 @@ export const pngs = {
 };
 
 const Experience = (props: Props) => {
-  const companies = {
-    ibm: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png",
-    freelance:
-      "https://e7.pngegg.com/pngimages/980/714/png-clipart-computer-icons-code-symbol-coding-miscellaneous-angle.png",
-    udhd: "https://zeevector.com/wp-content/uploads/LOGO/Government-of-India-Logo-Vector-PNG.png",
-  };
-
   const expArr = [
     {
+      company: "Tekion Corp",
+      companyImg: companyImages.tekion,
+      jobTitle: "Software Engineer",
+      tools: [
+        images.react,
+        images.redux,
+        images.reactTestingLibrary,
+        images.jest,
+        images.javascript,
+        images.mui,
+        images.lodash,
+        images.html,
+        images.css,
+        images.jira,
+      ],
+      startDate: "May 2023",
+      endDate: "Present",
+      achievements: [
+        "Designing and developing complex business workflows",
+        "Writing high-quality code",
+        "Mentoring peers",
+        "Collaborating cross-functionally",
+        "Delivering timely results in a fast-paced startup",
+        "Developed PDF builder renderer component",
+        "Performance Optimization",
+      ],
+    },
+    {
       company: "Urban Development and Housing Department, Govt of India",
-      companyImg: companies.udhd,
+      companyImg: companyImages.udhd,
       jobTitle: "Front End Developer",
       tools: [
         images.react,
@@ -56,7 +77,7 @@ const Experience = (props: Props) => {
         images.css,
       ],
       startDate: "March 2021",
-      endDate: "Present",
+      endDate: "April 2023",
       achievements: [
         "Built responsive UI and scalable dashboards. Improved overall security.",
         "Contributed to reusable functional components, compound components and render props design patterns.",
@@ -66,11 +87,10 @@ const Experience = (props: Props) => {
         "Sound knowledge of version control systems - GIT and GitHub",
         "Basic knowledge of ExpressJS, NodeJS and MongoDB",
       ],
-      no: "1 of 3",
     },
     {
       company: "Freelance",
-      companyImg: companies.freelance,
+      companyImg: companyImages.freelance,
       jobTitle: "Front end Web Developer",
       tools: [
         images.react,
@@ -94,11 +114,10 @@ const Experience = (props: Props) => {
         "Built Eye catching and animated front end UI with Tailwind CSS and Framer Motion.",
         "Optimized performance and reduced build bundle size by 10%.",
       ],
-      no: "2 of 3",
     },
     {
       company: "IBM",
-      companyImg: companies.ibm,
+      companyImg: companyImages.ibm,
       jobTitle: "Java Developer",
       tools: [images.mysql, images.java, images.msOffice],
       startDate: "July 2015",
@@ -110,7 +129,6 @@ const Experience = (props: Props) => {
         "Experience working with MySQL.",
         "Completed 100% of the tasks within the deadline, awarded Employee of the year in Research & Analytics Department.",
       ],
-      no: "3 of 3",
     },
   ];
   return (
@@ -132,7 +150,12 @@ const Experience = (props: Props) => {
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
         {expArr.map((exp, i) => (
-          <ExperienceCards key={i} props={exp} />
+          <ExperienceCards
+            key={i}
+            props={exp}
+            index={i}
+            length={expArr.length}
+          />
         ))}
       </div>
       <p className="absolute bottom-5 text-zinc-500 bg-zinc-800 px-5 rounded-xl py-0.5">

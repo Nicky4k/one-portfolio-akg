@@ -1,11 +1,42 @@
 const skillLevel = { a: "basic", b: "advanced", c: "proficient", d: "expert" };
 
+export const companyImages = {
+  tekion: {
+    name: "Tekion",
+    imgLocation: "/tekion.png",
+  },
+  ibm: {
+    name: "Ibm",
+    imgLocation: "/ibm.png",
+  },
+  freelance: {
+    name: "freelance",
+    imgLocation: "/freelance.png",
+  },
+  udhd: {
+    name: "UDHD",
+    imgLocation: "/udhd.png",
+  },
+};
+
 export const images = {
   axios: {
     toolName: "Axios",
     imgLocation: "/axios.png",
     proficiency: "70%",
     level: skillLevel.b,
+  },
+  lodash: {
+    toolName: "Lodash",
+    imgLocation: "/lodash.png",
+    proficiency: "70%",
+    level: skillLevel.c,
+  },
+  jira: {
+    toolName: "Jira",
+    imgLocation: "/jira.png",
+    proficiency: "70%",
+    level: skillLevel.c,
   },
   css: {
     toolName: "CSS3",

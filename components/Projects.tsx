@@ -81,7 +81,7 @@ const Projects = (props: Props) => {
         "buttons responsive to total results",
       ],
       siteLink:
-        "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-react-reactnative-activity-7010258308729118720-rmE8?utm_source=share&utm_medium=member_desktop",
+        "https://www.linkedin.com/posts/ashwini-react_react-react-reactnative-activity-7010258308729118720-SU1K?utm_source=share&utm_medium=member_desktop",
       sourceCode:
         "https://github.com/Nicky4k/React-Machine-Coding-Round/tree/main/Pagination/pagination",
     },
@@ -94,7 +94,7 @@ const Projects = (props: Props) => {
       toolsUsed: [images.react, images.javascript, images.css, images.html],
       features: ["add, rename and delete file/folders"],
       siteLink:
-        "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-react-reactnative-activity-7007621377893552128-sqk9?utm_source=share&utm_medium=member_desktop",
+        "https://www.linkedin.com/posts/ashwini-react_react-react-reactnative-activity-7007621377893552128-nWcT?utm_source=share&utm_medium=member_desktop",
       sourceCode:
         "https://codesandbox.io/s/github/Nicky4k/Sidebar-FileExplorer",
     },
@@ -107,7 +107,7 @@ const Projects = (props: Props) => {
       projectDemoImg: "/calendar.JPG",
       toolsUsed: [images.javascript, images.css, images.html],
       siteLink:
-        "https://www.linkedin.com/posts/ashwini-gupta-29855296_vanillajs-ui-interview-activity-7005037042850050048-Cqhf?utm_source=share&utm_medium=member_desktop",
+        "https://www.linkedin.com/posts/ashwini-react_vanillajs-ui-interview-activity-7005037042850050048-jxjP?utm_source=share&utm_medium=member_desktop",
       sourceCode: "https://github.com/Nicky4k/Vanilla-JS-UI/tree/main/CALENDAR",
     },
     {
@@ -117,7 +117,7 @@ const Projects = (props: Props) => {
       projectDemoImg: "/calculator.JPG",
       toolsUsed: [images.javascript, images.css, images.html],
       siteLink:
-        "https://www.linkedin.com/posts/ashwini-gupta-29855296_javascript-vanillajs-html-activity-7005400150835679232-Brlv?utm_source=share&utm_medium=member_desktop",
+        "https://www.linkedin.com/posts/ashwini-react_javascript-vanillajs-html-activity-7005400150835679232-vSSW?utm_source=share&utm_medium=member_desktop",
       sourceCode: "https://github.com/Nicky4k/Vanilla-JS-UI/tree/main/CALCY",
     },
     {
@@ -166,7 +166,7 @@ const Projects = (props: Props) => {
         "suggestions fetched from the local storage API.",
       ],
       siteLink:
-        "https://www.linkedin.com/posts/ashwini-gupta-29855296_hiring-remotejobs-freelancing-activity-7012056620197195776-fiXx?utm_source=share&utm_medium=member_desktop",
+        "https://www.linkedin.com/posts/ashwini-react_hiring-remotejobs-freelancing-activity-7012056620197195776-uZVl?utm_source=share&utm_medium=member_desktop",
       sourceCode:
         "https://github.com/Nicky4k/Vanilla-JS-UI/tree/main/Autocomplete-Typeahead",
       projectDemoImg: "/auto-complate-typeahead.png",
@@ -175,7 +175,7 @@ const Projects = (props: Props) => {
     {
       id: 0,
       name: "Burner Chat",
-      projectDemoImg: "",
+      projectDemoImg: "/burner.jpeg",
       toolsUsed: [
         images.css,
         images.javascript,
@@ -207,7 +207,7 @@ const Projects = (props: Props) => {
       features: ["sleek implementation of react hooks", "responsive design"],
       toolsUsed: [images.react, images.javascript, images.css, images.html],
       siteLink:
-        "https://www.linkedin.com/posts/ashwini-gupta-29855296_react-100daysofcode-100daysofcodechallenge-activity-7022592202367270912-eFiy/?utm_source=share&utm_medium=member_desktop",
+        "https://www.linkedin.com/posts/ashwini-react_react-100daysofcode-100daysofcodechallenge-activity-7022592202367270912-9ayS?utm_source=share&utm_medium=member_desktop",
       sourceCode:
         "https://github.com/Nicky4k/FreeCodeCamp-React/tree/main/react-course",
     },

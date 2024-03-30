@@ -4,7 +4,10 @@ type Props = {
   key: number;
   props: {
     company: string;
-    companyImg: string;
+    companyImg: {
+      name: string;
+      imgLocation: string;
+    };
     jobTitle: string;
     tools: {
       toolName: string;
@@ -15,8 +18,9 @@ type Props = {
     startDate: string;
     endDate: string;
     achievements: string[];
-    no: string;
   };
+  index: number;
+  length: number;
 };
 import { motion } from "framer-motion";
 
@@ -41,8 +45,8 @@ const ExperienceCards = (props: Props) => {
         viewport={{ once: true }}
         className="w-16 h-16 xl:w-24 xl:h-24 object-contain
          bg-white p-2 rounded-full"
-        src={props.props.companyImg}
-        alt={props.props.company}
+        src={props.props.companyImg.imgLocation}
+        alt={props.props.companyImg.name}
       />
       <div className="">
         <h4 className="text-xl font-light text-gray-200">
@@ -74,7 +78,7 @@ const ExperienceCards = (props: Props) => {
         </ul>
         <div className="pt-4 ">
           <p className="text-blue-400 text-center w-24 bottom-5 bg-zinc-900 px-5 rounded-xl py-0.5">
-            {props.props.no}
+            {`${props.index + 1} of ${props.length}`}
           </p>
         </div>
       </div>

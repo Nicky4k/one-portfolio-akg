@@ -51,16 +51,18 @@ const About = (props: Props) => {
         </h4>
         <p className="text-sm xl:text-base md:text-base xl:py-1 md:px-5 xl:px-20 text-gray-400">
           I have been coding since 4th grade and have 5 years of experience in
-          IT including 2 years of experience with React, JavaScript, Redux-Saga
-          and UI development.
+          IT including 3 years of experience in React (designing and developing
+          complex business workflows, writing high-quality code, mentoring
+          peers, collaborating cross-functionally, and delivering timely results
+          in a fast-paced startup).
           <br />
-          Zeal to learn new tech.
           <br />
+          Possesses strong communication and performance optimization skills.
           <br />
-          I'm confident that my skills and experience match the requirements of
-          the role you are interviewing. Introduce me to the opportunities &
-          challenges at your organization and I would appretiate if we can
-          expedite the interviewing process.
+        </p>
+        <p className="text-sm xl:text-base md:text-base xl:py-1 md:px-5 xl:px-20 text-gray-600">
+          Passionate React.js developer eager to join a dynamic and innovative
+          product-based company.
         </p>
       </motion.div>
     </div>

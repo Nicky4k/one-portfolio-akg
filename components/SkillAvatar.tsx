@@ -27,7 +27,7 @@ const SkillAvatar = (props: Props) => {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        className="object-contain w-20 h-20 xl:w-24 xl:h-24 p-1 rounded-lg filter group-hover:grayscale transition duration-300 ease-in-out "
+        className="object-contain w-16 h-16 xl:w-20 xl:h-20 p-1 rounded-lg filter group-hover:grayscale transition duration-300 ease-in-out "
         src={props.props[1].imgLocation}
         alt={props.props[1].toolName}
       />

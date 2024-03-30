@@ -36,9 +36,10 @@ const Skills = (props: Props) => {
         Hover over a skill for info
       </h3>
 
-      <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-5 xl:p-60 ">
+      <div className="w-full grid mt-20 place-items-center grid-cols-4 xl:md:gap-4 gap-2 xl:grid-cols-6 xl:p-60 ">
         {Object.entries(images)
           .filter((skill) => !exclude.includes(skill[0]))
+          .sort()
           .map((skill, i) => (
             <SkillAvatar key={i} props={skill} />
           ))}
