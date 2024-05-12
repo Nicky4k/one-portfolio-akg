@@ -4,7 +4,7 @@ import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import useDownloader from "react-use-downloader";
 import Link from "next/link";
-import { PhoneIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon, VideoCameraIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -32,12 +32,12 @@ function Header({}: Props) {
         }}
         className="flex flex-row items-center"
       >
-        <div className="flex flex-col items-center justify-center">
+        {/* <div className="flex flex-col items-center justify-center">
           <SocialIcon
             style={{
-              margin: "0.15rem 0.25rem",
-              height: "3.25rem",
-              width: "3.25rem",
+              margin: "0.25rem 0.25rem -0.05rem 0.25rem",
+              height: "3rem",
+              width: "3rem",
             }}
             url="mailto:ashwinigupta0126@gmail.com"
             target="_blank"
@@ -52,7 +52,7 @@ function Header({}: Props) {
               Email
             </label>
           </a>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center justify-center">
           <a id="call" href="tel:+919148669104">
             <PhoneIcon className="text-gray-200/40 h-14 w-12 px-3 inline-block" />
@@ -95,6 +95,18 @@ function Header({}: Props) {
             LinkedIn
           </label>
         </div>
+        <div className="flex flex-col items-center justify-center ml-2">
+          <a
+            id="call"
+            href="https://youtu.be/JvbRAq7QAnQ?si=Mj4Du_fMKLUGLTlS"
+            target="_blank"
+          >
+            <VideoCameraIcon className="text-gray-200/40 h-14 w-12 px-3 inline-block" />
+          </a>
+          <label htmlFor="call" className="text-gray-200/40 text-xs">
+            Video CV
+          </label>
+        </div>
       </motion.div>
       <motion.a
         onClick={() => download(fileUrl, filename)}
@@ -112,7 +124,7 @@ function Header({}: Props) {
           duration: 1,
         }}
         download={true}
-        href="https://drive.usercontent.google.com/u/0/uc?id=1GRhnyzp-8lSi2XQJMghm2X5rH8PAjGY3&export=download"
+        href="https://drive.google.com/file/d/1j76mmqRmQO8hG18Chzcia_VpSOdYeeeh/view"
         target="_blank"
         rel="noopener noreferrer"
         className="p-4 flex flex-row items-center cursor-pointer"

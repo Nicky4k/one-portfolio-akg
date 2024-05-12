@@ -9,12 +9,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const [text, count] = useTypewriter({
-    words: [
-      "< Hi! />",
-      "I am Ashwini Gupta",
-      "Eat Sleep React Repeat",
-      "<Black_Coffee.jsx />",
-    ],
+    words: ["Hi, I am Ashwini Gupta", "Eat Sleep <React/> Repeat"],
     loop: true,
     delaySpeed: 1000,
   });
@@ -49,8 +44,8 @@ const Hero = (props: Props) => {
           <Cursor cursorColor="#F7AB0A" />
         </motion.h1>
         <div className="pt-5">
-          <Link href="#about">
-            <button className="heroButton">About</button>
+          <Link href="#contactme">
+            <button className="heroButton">Contact</button>
           </Link>
           <Link href="#experience">
             <button className="heroButton">Experience</button>
