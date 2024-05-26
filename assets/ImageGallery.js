@@ -34,7 +34,7 @@ export const images = {
   },
   typescript: {
     toolName: "typescript",
-    imgLocation: "/Typescript.webp",
+    imgLocation: "/Typescript.png",
     proficiency: "40%",
     level: skillLevel.a,
   },
