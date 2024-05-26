@@ -26,25 +26,25 @@ const Contactme = (props: Props) => {
       <div className="flex flex-col space-y-10">
         <h4 className="xl:md:text-2xl text-xl font-semibold text-center text-gray-300/100">
           I have got just what you need.{" "}
-          <span className="underline decoration-yellow-500 text-gray-100/100">
+          <span className="underline decoration-purple text-gray-100/100">
             Let's Talk.
           </span>
         </h4>
         <div>
           <div className="flex items-center space-x-5  justify-center">
-            <PhoneIcon className="text-yellow-500 h-7 w-7 animate-pulse" />
+            <PhoneIcon className="text-#8576FF h-7 w-7 animate-pulse" />
             <p className="xl:md:text-2xl text-xl text-gray-500/100">
               <a href="tel:+919148669104">+91 9148669104</a>
             </p>
           </div>
           <div className="flex items-center space-x-5 justify-center py-1">
-            <EnvelopeIcon className="text-yellow-500 h-7 w-7 animate-pulse " />
+            <EnvelopeIcon className="text-#8576FF h-7 w-7 animate-pulse " />
             <p className="xl:md:text-2xl text-xl text-gray-500/100">
               ashwinigupta0126@gmail.com
             </p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-yellow-500 h-7 w-7 animate-pulse" />
+            <MapPinIcon className="text-#8576FF h-7 w-7 animate-pulse" />
             <p className="xl:md:text-2xl text-xl text-gray-500/100">
               Bengaluru, India
             </p>
@@ -87,7 +87,7 @@ const Contactme = (props: Props) => {
             name="message"
             id="message"
           ></textarea>
-          <button className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">
+          <button className="bg-[#8576FF] py-5 px-10 rounded-md text-black font-bold text-lg">
             Submit
           </button>
         </form>

@@ -22,11 +22,11 @@ const SkillAvatar = (props: Props) => {
       <motion.img
         loading="lazy"
         initial={{
-          scale: 0.77,
+          scale: 0.57,
           opacity: 0,
         }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 0.87 }}
         className="object-contain w-16 h-16 xl:w-20 xl:h-20 p-1 rounded-lg filter group-hover:grayscale transition duration-300 ease-in-out "
         src={props.props[1].imgLocation}
         alt={props.props[1].toolName}

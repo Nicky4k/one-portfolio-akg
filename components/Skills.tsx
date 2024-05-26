@@ -6,14 +6,7 @@ import { images } from "../assets/ImageGallery";
 type Props = {};
 
 const Skills = (props: Props) => {
-  const exclude = [
-    "java",
-    "nextjs",
-    "nodeJS",
-    "axios",
-    "expressJs",
-    "reactRouterDom",
-  ];
+  const exclude = ["java", "nodeJS", "expressJs"];
 
   return (
     <motion.div

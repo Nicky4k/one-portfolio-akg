@@ -26,17 +26,6 @@ const Footer = (props: Props) => {
           <div className="flex items-center py-1">
             <img
               loading="lazy"
-              className="object-contain w-12 h-12"
-              src="https://pngimg.com/uploads/vinyl/vinyl_PNG14.png"
-              alt="dj"
-            />
-            <h4 className="px-2  tracking-[5px] text-gray-500 text-sm">
-              Professional DJ
-            </h4>
-          </div>
-          <div className="flex items-center py-1">
-            <img
-              loading="lazy"
               className="object-contain w-12 h-12 p-0.5"
               src="https://www.freeiconspng.com/thumbs/basketball-png/black-basketball-png-12.png"
               alt="basketball"

@@ -32,6 +32,12 @@ export const images = {
     proficiency: "70%",
     level: skillLevel.c,
   },
+  typescript: {
+    toolName: "typescript",
+    imgLocation: "/Typescript.webp",
+    proficiency: "40%",
+    level: skillLevel.a,
+  },
   jira: {
     toolName: "Jira",
     imgLocation: "/jira.png",
@@ -86,7 +92,6 @@ export const images = {
     proficiency: "70%",
     level: skillLevel.c,
   },
-
   java: {
     toolName: "Java",
     imgLocation: "/java.png",
@@ -103,7 +108,7 @@ export const images = {
   jest: {
     toolName: "Jest",
     imgLocation: "/jest.png",
-    proficiency: "60%",
+    proficiency: "80%",
     level: skillLevel.b,
   },
   mongodb: {
@@ -133,8 +138,8 @@ export const images = {
   nextjs: {
     toolName: "Next JS",
     imgLocation: "/nextjs.png",
-    proficiency: "25%",
-    level: skillLevel.a,
+    proficiency: "70%",
+    level: skillLevel.c,
   },
   nodeJS: {
     toolName: "Node JS",
